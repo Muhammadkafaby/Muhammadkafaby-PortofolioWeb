@@ -270,8 +270,8 @@ export default {
             class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5"
           >
             <li class="mr-2">
-              <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                            <button
+                class="inline-block px-4 py-3 rounded-lg"
                 :class="{
                   'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1,
                 }"
@@ -279,17 +279,17 @@ export default {
               >
                 Tech Stack
               </button>
-            </li>
-            <li class="mr-2">
-              <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{
-                  'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2,
-                }"
-                @click="activeTab = 2"
-              >
-                Tools
-              </button>
+              </li>
+              <li class="mr-2">
+                <button
+                  class="inline-block px-4 py-3 rounded-lg"
+                  :class="{
+                    'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2,
+                  }"
+                  @click="activeTab = 2"
+                >
+                  Tools
+                </button>
             </li>
           </ul>
         </div>
@@ -434,7 +434,7 @@ body {
 }
 
 .bg-amber-200 {
-  background-color: #00ff00;
+  background-color: #003500;
 }
 
 .text-amber-200 {
@@ -445,9 +445,9 @@ body {
   border-color: #00ff00;
 }
 
-.hover\:bg-amber-200:hover {
+/* .hover\:bg-amber-200:hover {
   background-color: #00ff00;
-}
+} */
 
 .hover\:text-white:hover {
   color: #00ff00;
