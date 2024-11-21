@@ -19,7 +19,8 @@
         Welcome to My personal website. <span class="wave">👋🏼</span>
       </p>
       <br />
-      <!-- <button
+      <a href="https://drive.usercontent.google.com/download?id=1XcUN4NMzv3-6nPErp6QoxbtnaugUxYpq&export=download&authuser=1&confirm=t&uuid=86accf5c-e44a-4eb8-8620-39bb9954cbbe&at=AENtkXYLKqNIGyexClL0lLDQhJ5E:1732173017665" target="_blank" rel="noopener noreferrer">
+      <button
         class="fadein-bot fade-500 flex items-center py-2 px-4 mx-auto text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 md:mx-0 text-amber-200 border-amber-200 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-fit"><svg
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-2 w-4 h-4">
           <path fill-rule="evenodd"
@@ -28,7 +29,8 @@
           <path
             d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z">
           </path>
-        </svg>Download Resume</button> -->
+        </svg>Download Resume</button>
+      </a>
     </div>
     <div class="flex justify-center md:justify-start fadein-right">
       <img
