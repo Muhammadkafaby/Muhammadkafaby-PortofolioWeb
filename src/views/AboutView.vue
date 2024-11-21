@@ -222,7 +222,7 @@ export default {
         <div class="flex justify-center">
           <img
             class="w-9/12 rounded-full mb-3 fadein-up"
-            src="https://i1.sndcdn.com/avatars-000214125831-5q6tdw-t500x500.jpg"
+            src="https://media.istockphoto.com/vectors/spy-icon-with-binary-code-vector-id824577262?k=6&m=824577262&s=170667a&w=0&h=75MEzeQqAauy_FE1v44t_tF6RMeRyCcitbYDsl-flXo="
             alt="Foto"
           />
         </div>
