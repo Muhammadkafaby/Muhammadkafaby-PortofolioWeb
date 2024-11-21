@@ -14,13 +14,22 @@
           >MuhammadKafaby();</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/MuhammadKafaby"
-            ><img
-              class="w-9 rounded-full"
-              src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"
-              alt="github"
-          /></a>
-        </div>
+  <a href="https://github.com/MuhammadKafaby">
+    <img
+      class="w-9 rounded-full"
+      src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"
+      alt="github"
+    />
+  </a>
+  <a href="https://www.linkedin.com/in/muhammad-kafaby-8223b4268/" class="ml-4">
+    <img
+      class="w-9 rounded-full"
+      src="https://www.vhv.rs/file/max/8/80798_linkedin-logo-white-png.png"
+      alt="linkedin"
+    />
+  </a>
+</div>
+        
         <div
           class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
           id="mobile-menu-3"
