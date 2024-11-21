@@ -9,10 +9,9 @@
         class="container mx-auto flex flex-wrap items-center justify-between"
       >
         <button @click="redirectToHome" class="flex">
-          <span
-            class="self-center text-lg text-[#ffdb70] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100"
-            >MuhammadKafaby();</span
-          >
+                    <span
+            class="self-center text-lg text-[#00ff00] font-semibold whitespace-nowrap fadein-bot hover:text-amber-100"
+          >MuhammadKafaby();</span>
         </button>
         <div class="flex md:order-2 fadein-bot">
           <a href="https://github.com/MuhammadKafaby"
@@ -120,7 +119,7 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffdb70;
+  background: #00ff00; /* Warna hijau hacker */
   border-radius: 5px;
 }
 
@@ -134,7 +133,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #00ff00; /* Warna hijau hacker */
   height: 100vh;
 }
 
@@ -144,7 +143,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #00ff00; /* Warna hijau hacker */
   transition: color 0.3s;
 }
 
@@ -162,7 +161,7 @@ nav a.router-link-exact-active::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #ffdb70;
+  background-color: #00ff00; /* Warna hijau hacker */
 }
 
 nav a.router-link-exact-active:hover {

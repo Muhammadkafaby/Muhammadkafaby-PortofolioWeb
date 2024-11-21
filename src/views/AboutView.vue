@@ -418,4 +418,38 @@ export default {
 .item-tech:hover .status-tech {
   opacity: 1;
 }
+
+/* Hacker theme colors */
+body {
+  background-color: #0f0f0f;
+  color: #00ff00;
+}
+
+.text-amber-50 {
+  color: #00ff00;
+}
+
+.text-white {
+  color: #00ff00;
+}
+
+.bg-amber-200 {
+  background-color: #00ff00;
+}
+
+.text-amber-200 {
+  color: #00ff00;
+}
+
+.border-amber-200 {
+  border-color: #00ff00;
+}
+
+.hover\:bg-amber-200:hover {
+  background-color: #00ff00;
+}
+
+.hover\:text-white:hover {
+  color: #00ff00;
+}
 </style>

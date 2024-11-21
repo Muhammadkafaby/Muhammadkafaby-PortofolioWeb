@@ -182,7 +182,7 @@ export default {
   transform: translateY(-8px);
 }
 svg:hover {
-  stroke: #ffdb70;
+  stroke: #42b983;
 }
 @keyframes fadeZoomIn {
   0% {

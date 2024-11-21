@@ -1,27 +1,27 @@
 <template>
   <main
-    class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh]"
+    class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh] bg-black"
   >
     <div class="space-y-2 text-center md:text-left px-10">
-      <p class="text-amber-200">Hello World, I'm</p>
-      <h1 class="text-4xl font-bold md:text-5xl text-white fadein-up">
+      <p class="text-green-200 green-text blink">Hello World, I'm</p>
+      <h1 class="text-4xl font-bold md:text-5xl text-green-200 fadein-up">
         Muhammad Kafaby
       </h1>
       <div class="py-2">
         <h1
-          class="typewrite text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-yellow-500 md:text-2xl fadein-up"
+          class="typewrite text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-100 to-green-500 md:text-2xl fadein-up"
           ref="typewriter"
         >
           <span class="wrap">{{ txt }}</span>
         </h1>
       </div>
-      <p class="text-white pr-4 fade-in-from-left">
+      <p class="text-green-200 pr-4 fade-in-from-left">
         Welcome to My personal website. <span class="wave">👋🏼</span>
       </p>
       <br />
       <a href="https://drive.usercontent.google.com/download?id=1XcUN4NMzv3-6nPErp6QoxbtnaugUxYpq&export=download&authuser=1&confirm=t&uuid=86accf5c-e44a-4eb8-8620-39bb9954cbbe&at=AENtkXYLKqNIGyexClL0lLDQhJ5E:1732173017665" target="_blank" rel="noopener noreferrer">
       <button
-        class="fadein-bot fade-500 flex items-center py-2 px-4 mx-auto text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 md:mx-0 text-amber-200 border-amber-200 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-fit"><svg
+        class="fadein-bot fade-500 flex items-center py-2 px-4 mx-auto text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 md:mx-0 text-green-200 border-green-200 hover:bg-green-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-fit"><svg
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-2 w-4 h-4">
           <path fill-rule="evenodd"
             d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm5.845 17.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V12a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"
@@ -40,7 +40,7 @@
         height="300"
         decoding="async"
         data-nimg="1"
-        class="w-10/12 md:h-auto rounded-full border-4 border-amber-200 pict"
+        class="w-10/12 md:h-auto rounded-full border-4 border-green-200 pict"
         src="https://i1.sndcdn.com/avatars-000214125831-5q6tdw-t500x500.jpg"
       />
     </div>
@@ -114,10 +114,17 @@ export default {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: black;
+  color: #00ff00; /* Warna hijau hacker */
+}
+
+.green-text, .text-green-200, .border-green-200 {
+  color: #00ff00 !important;
+  border-color: #00ff00 !important;
 }
 
 .typewrite > .wrap {
-  border-right: 0.08em solid #fff;
+  border-right: 0.08em solid #00ff00;
 }
 
 .wave {
@@ -126,6 +133,39 @@ body {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+a {
+  color: #00ff00;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00cc00;
+}
+
+button {
+  background-color: black;
+  color: #00ff00;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: black;
+  transform: scale(1.05);
+}
+
+input, textarea {
+  background-color: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #00cc00;
+  box-shadow: 0 0 10px #00cc00;
 }
 
 @keyframes wave-animation {
@@ -163,9 +203,13 @@ body {
 }
 
 .pict {
-  box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
-  -webkit-box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
-  -moz-box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
+  box-shadow: 0px 0px 73px -9px rgba(0, 255, 0, 0.44); /* Green color */
+  -webkit-box-shadow: 0px 0px 73px -9px rgba(0, 255, 0, 0.44); /* Green color */
+  -moz-box-shadow: 0px 0px 73px -9px rgba(0, 255, 0, 0.44); /* Green color */
+}
+
+.fadein-up, .fade-in-from-left, .fadein-right, .fadein-bot {
+  color: #00ff00;
 }
 
 .fadein-up {
@@ -250,5 +294,138 @@ body {
 }
 .fade-500 {
   animation-delay: 500ms;
+}
+
+/* Animasi berkedip */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Animasi glitch */
+.glitch {
+  position: relative;
+  color: #00ff00;
+  font-size: 2em;
+  animation: glitch-animation 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-animation 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 blue;
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-animation 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+  0% {
+    clip: rect(42px, 9999px, 44px, 0);
+    transform: skew(0.3deg);
+  }
+  5% {
+    clip: rect(12px, 9999px, 74px, 0);
+    transform: skew(0.3deg);
+  }
+  10% {
+    clip: rect(82px, 9999px, 14px, 0);
+    transform: skew(0.3deg);
+  }
+  15% {
+    clip: rect(12px, 9999px, 64px, 0);
+    transform: skew(0.3deg);
+  }
+  20% {
+    clip: rect(32px, 9999px, 84px, 0);
+    transform: skew(0.3deg);
+  }
+  25% {
+    clip: rect(22px, 9999px, 54px, 0);
+    transform: skew(0.3deg);
+  }
+  30% {
+    clip: rect(12px, 9999px, 94px, 0);
+    transform: skew(0.3deg);
+  }
+  35% {
+    clip: rect(42px, 9999px, 24px, 0);
+    transform: skew(0.3deg);
+  }
+  40% {
+    clip: rect(72px, 9999px, 34px, 0);
+    transform: skew(0.3deg);
+  }
+  45% {
+    clip: rect(52px, 9999px, 44px, 0);
+    transform: skew(0.3deg);
+  }
+  50% {
+    clip: rect(32px, 9999px, 54px, 0);
+    transform: skew(0.3deg);
+  }
+  55% {
+    clip: rect(12px, 9999px, 64px, 0);
+    transform: skew(0.3deg);
+  }
+  60% {
+    clip: rect(42px, 9999px, 74px, 0);
+    transform: skew(0.3deg);
+  }
+  65% {
+    clip: rect(22px, 9999px, 84px, 0);
+    transform: skew(0.3deg);
+  }
+  70% {
+    clip: rect(32px, 9999px, 94px, 0);
+    transform: skew(0.3deg);
+  }
+  75% {
+    clip: rect(12px, 9999px, 104px, 0);
+    transform: skew(0.3deg);
+  }
+  80% {
+    clip: rect(42px, 9999px, 114px, 0);
+    transform: skew(0.3deg);
+  }
+  85% {
+    clip: rect(72px, 9999px, 124px, 0);
+    transform: skew(0.3deg);
+  }
+  90% {
+    clip: rect(52px, 9999px, 134px, 0);
+    transform: skew(0.3deg);
+  }
+  95% {
+    clip: rect(32px, 9999px, 144px, 0);
+    transform: skew(0.3deg);
+  }
+  100% {
+    clip: rect(12px, 9999px, 154px, 0);
+    transform: skew(0.3deg);
+  }
 }
 </style>
