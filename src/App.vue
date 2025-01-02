@@ -17,7 +17,7 @@
   <a href="https://github.com/MuhammadKafaby">
     <img
       class="w-9 rounded-full"
-      src="https://www.pngitem.com/pimgs/m/128-1280311_github-icon-white-png-github-icon-black-background.png"
+      src="https://cdn2.iconfinder.com/data/icons/boxicons/256/github.png"
       alt="github"
     />
   </a>
