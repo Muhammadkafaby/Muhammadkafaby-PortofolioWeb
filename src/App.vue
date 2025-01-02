@@ -17,7 +17,7 @@
   <a href="https://github.com/MuhammadKafaby">
     <img
       class="w-9 rounded-full"
-      src="https://cdn2.iconfinder.com/data/icons/boxicons/256/github.png"
+      src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"
       alt="github"
     />
   </a>
